@@ -3,8 +3,8 @@ import pandas as pd
 import os
 from PyLyrics import *
 
-data_file = os.path.join(os.pardir, "data", "TOP-2000-2018.xls")
-destination_file = os.path.join(os.pardir, "data", "top2000.csv")
+data_file = os.path.join(os.pardir, "data", "raw_data.xls")
+destination_file = os.path.join(os.pardir, "data", "data_with_lyrics.csv")
 
 df = pd.read_excel(data_file, header = None, names = ['pos', 'track', 'artist', 'year'])
 
